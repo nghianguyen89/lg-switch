@@ -1,0 +1,17 @@
+bin/
+obj/
+release/
+.tools/
+recovery/
+settings.xml*
+*.log
+diagnostics.txt
+self-test.txt
+watchdog-self-test.txt
+last-error.txt
+*.tmp
+*.zip
+preview*.png
+.vs/
+*.user
+*.suo

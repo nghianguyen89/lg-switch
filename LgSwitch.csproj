@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <Platform Condition="'$(Platform)' == ''">x64</Platform>
+    <OutputType>WinExe</OutputType><AssemblyName>LgSwitch</AssemblyName><RootNamespace>LgSwitch</RootNamespace>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion><PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\$(Configuration)\</OutputPath><ApplicationIcon>assets\LgSwitch.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest><AppConfig>app.config</AppConfig><Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup><Reference Include="System" /><Reference Include="System.Core" /><Reference Include="System.Drawing" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /></ItemGroup>
+  <ItemGroup><Compile Include="src\Native.cs" /><Compile Include="src\Core.cs" /><Compile Include="src\Program.cs" /><Compile Include="src\SelfTests.cs" /><Compile Include="src\IntelDdc.cs" /><Compile Include="src\ModernControls.cs" /></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
